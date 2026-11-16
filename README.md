@@ -51,4 +51,4 @@ Then choose **Run All**.
 
 ## Author
 
-Yiğit Peker, https://github.com/yigitpeker34
+Yigit Peker, HTW Berlin
