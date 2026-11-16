@@ -20,6 +20,8 @@ The notebook walks through the full workflow: exploratory data analysis, a leaka
 - **No data leakage:** scaling and encoding are fitted on the training split only, via Scikit-Learn pipelines applied after the train/test split.
 - **Overfitting control:** the Decision Tree depth is limited to 5.
 - **Results:** Logistic Regression performed best (80.55% test accuracy), followed by Random Forest (80.34%) and Decision Tree (79.84%).
+- **Class balance:** about 26% of customers churn, so the dataset is imbalanced.
+- **Selected model:** Logistic Regression, for its high accuracy and interpretability.
 - **Main finding:** customers on month-to-month contracts with short tenure are the most likely to churn.
 - **Recommendation:** a targeted discount strategy to move monthly customers to 1-year contracts.
 
