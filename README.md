@@ -13,13 +13,13 @@ The notebook walks through the full workflow: exploratory data analysis, a leaka
 | EDA | Distribution and churn analysis of customer, contract and billing attributes |
 | Preprocessing | Imputation, scaling and encoding inside Scikit-Learn `Pipeline`s |
 | Models | Logistic Regression, Decision Tree (`max_depth=5`), Random Forest (`n_estimators=100`) |
-| Evaluation | Confusion matrix and class-wise metrics instead of accuracy alone, because the classes are imbalanced |
+| Evaluation | Accuracy scores plus confusion matrices, since accuracy alone can be misleading on imbalanced classes |
 
 ## Key points
 
 - **No data leakage:** scaling and encoding are fitted on the training split only, via Scikit-Learn pipelines applied after the train/test split.
 - **Overfitting control:** the Decision Tree depth is limited to 5.
-- **Best baseline:** Logistic Regression with about 82% accuracy.
+- **Results:** Logistic Regression performed best (80.55% test accuracy), followed by Random Forest (80.34%) and Decision Tree (79.84%).
 - **Main finding:** customers on month-to-month contracts with short tenure are the most likely to churn.
 - **Recommendation:** a targeted discount strategy to move monthly customers to 1-year contracts.
 
